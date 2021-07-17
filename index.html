@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var array = [
+        "Игорь",
+        "Михаил",
+        "Дарина",
+        "Настя",
+        "Евгений",
+        "Клим",
+        "Надя",
+        "Елена",
+        "Богдан",
+        "Сергей",
+        "Стас",
+        "Александр",
+        "Евгений",
+        "Виталий",
+        "Лиля",
+      ];
+      var counter = 0;
+      var secondName = "";
+
+      while (counter < array.length) {
+          console.log(counter);
+          console.log(array[counter]);
+        if (array[counter] == "Евгений") {
+          secondName += array[counter];
+          break
+        }
+        counter++;
+      }
+      console.log(secondName);
+    </script>
+  </body>
+</html>
