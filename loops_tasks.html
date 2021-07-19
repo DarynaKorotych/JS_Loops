@@ -7,7 +7,7 @@
     <title>multidimensional array</title>
   </head>
   <body>
-    <script>
+    <!-- <script>
       var array = [
         "Игорь",
         "Михаил",
@@ -20,10 +20,10 @@
         "Богдан",
         "Сергей",
         "Стас",
-        "Александр",
+        "Саша",
         "Евгений",
         "Виталий",
-        "Лиля",
+        "Лиля"
       ];
       var counter = 0;
       var firstName = "";
@@ -37,13 +37,37 @@
         }
       }
       console.log(firstName);
-    </script>
-    <!-- <script>
-      var students = {
-        boys: ["Клим", "Стас", "Сергей", "Миша"],
-        girls: ["Настя", "Лена", "Дарина", "Надя"],
-      };
-      console.log(students["boys"][3]);
     </script> -->
+    <script>
+      var students = [
+        `<ol>
+  <li>Игорь</li>
+  <li>Михаил</li>
+  <li>Дарина</li>
+  <li>Настя</li>
+  <li>Евгений</li>
+  <li>Клим</li>
+  <li>Надя</li>
+  <li>Елена</li>
+  <li>Богдан</li>
+  <li>Сергей</li>
+  <li>Стас</li>
+  <li>Саша</li>
+  <li>Евгений</li>
+  <li>Виталий</li>
+  <li>Лиля</li>
+</ol>`,
+      ];
+
+      document.write(students);
+
+      var student = prompt("Enter student\'s name");
+      if(student == '' || student == ' '){
+        var student = prompt("Enter student\'s name");
+      } 
+      if (student == true || student == false) {
+        document.write(`You don't enter student's name`)
+      }
+    </script>
   </body>
 </html>
