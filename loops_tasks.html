@@ -7,8 +7,13 @@
     <title>multidimensional array</title>
   </head>
   <body>
-    <!-- <script>
-      var array = [
+    <style>
+      .highlight {
+        color: red;
+      }
+    </style>
+    <script>
+      var students = [
         "Игорь",
         "Михаил",
         "Дарина",
@@ -20,53 +25,23 @@
         "Богдан",
         "Сергей",
         "Стас",
-        "Саша",
+        "Александр",
         "Евгений",
         "Виталий",
-        "Лиля"
-      ];
-      var counter = 0;
-      var firstName = "";
-
-      while (counter < array.length) {
-        counter++;
-        console.log(counter);
-        console.log(array[counter]);
-        if (array[counter] == "Евгений") {
-          continue;
-        }
-      }
-      console.log(firstName);
-    </script> -->
-    <script>
-      var students = [
-        `<ol>
-  <li>Игорь</li>
-  <li>Михаил</li>
-  <li>Дарина</li>
-  <li>Настя</li>
-  <li>Евгений</li>
-  <li>Клим</li>
-  <li>Надя</li>
-  <li>Елена</li>
-  <li>Богдан</li>
-  <li>Сергей</li>
-  <li>Стас</li>
-  <li>Саша</li>
-  <li>Евгений</li>
-  <li>Виталий</li>
-  <li>Лиля</li>
-</ol>`,
+        "Лиля",
       ];
 
       var student = prompt("Enter student's name");
-      if (student == "" || student == " ") {
-      } else {
-        var student = prompt("Enter student's name");
+      document.write("<ol>");
+      for (let i = 0; i < students.length; i++) {
+        console.log(students[i]);
+        if (students[i] === student) {
+          document.write('<li class="highlight">' + students[i] + "</li>");
+          continue;
+        }
+        document.write('<li>' + students[i] + '</li>');
       }
-      if (student == true || student == false) {
-        document.write(`You don't enter student's name`);
-      }
+      document.write("</ol>");
     </script>
   </body>
 </html>
